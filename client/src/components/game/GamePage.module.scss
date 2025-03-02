@@ -1,0 +1,75 @@
+.game {
+    @apply mt-6 min-h-screen;
+    > .container {
+        @apply max-w-[1140px] m-auto flex h-max  gap-6;
+        > .left {
+            @apply w-1/3;
+            > img {
+                @apply w-full  object-cover;
+            }
+        }
+        > .right {
+            @apply w-2/3;
+            > .gameInfo {
+                @apply mb-5;
+                > .game__title {
+                    @apply text-[36px] font-bold text-[#AAAAAA] mb-2;
+                }
+                > .game__description {
+                    > h2 {
+                        @apply text-[18px] font-bold text-[#AAAAAA] mb-2;
+                    }
+                    > p {
+                        @apply text-[#AAAAAA] mb-6;
+                    }
+                }
+                > .info {
+                    > h2 {
+                        @apply text-[24px] font-bold text-[#AAAAAA] mb-8;
+                    }
+                    > .info__item {
+                        @apply mb-4 flex flex-wrap;
+                        > div {
+                            @apply mr-4 max-w-[50%] flex-[30%]  mb-6;
+
+                            > h3 {
+                                @apply text-[13px] font-bold text-[#798187];
+                            }
+                            > p {
+                                @apply text-[14px] font-bold text-[#AAAAAA];
+                            }
+                        }
+                    }
+                }
+                > .screenshots {
+                    @apply flex gap-4;
+
+                    > .screenshot {
+                        > img {
+                            @apply object-cover;
+                        }
+                    }
+                }
+                > .system__requirements {
+                    > h2 {
+                        @apply text-[24px] font-bold text-[#AAAAAA] mb-4 mt-8;
+                    }
+                    > .system {
+                        @apply mb-4 flex flex-wrap;
+
+                        > div {
+                            @apply mr-4 max-w-[50%] flex-[40%]  mb-6;
+
+                            > h3 {
+                                @apply text-[13px] font-bold text-[#798187];
+                            }
+                            > p {
+                                @apply text-[14px] font-bold text-[#AAAAAA];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
